@@ -41,7 +41,7 @@ function main()
                     Script.ShowMessageBox("Success!", "Games list successfully exported to: \n" .. path, "Exit")
                 end
             else
-                Script.ShowMessageBox("Error", "A game export already exists at: \n" .. path .. ".\nPlease rename, move, or delete this file before running this script.", "Exit")
+                Script.ShowMessageBox("Error", "A game export already exists at: \n" .. path .. ".\n\nPlease rename, move, or delete this file before running this script.", "Exit")
             end
         else
             showCancel()
