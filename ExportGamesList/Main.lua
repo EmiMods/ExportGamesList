@@ -54,7 +54,7 @@ function showCancel()
 end
 
 function decToHex(decimal)
-    return string.format("%x", decimal)
+    return string.format(string.upper("%08x"), decimal)
 end
 
 function promptDriveSelect()
