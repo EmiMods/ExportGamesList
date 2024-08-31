@@ -62,10 +62,12 @@ end
 function promptDriveSelect()
     local arrDrives = {}
 
+    -- Grab list of drives
     for i, drives in ipairs(FileSystem.GetDrives(false)) do
 		arrDrives[i] = drives["MountPoint"]
 	end
 
+    --Display drives to user for selection
     local dialog = Script.ShowPopupList(
                                             "Please select where to save the text file..",
                                             "No drives found.",
